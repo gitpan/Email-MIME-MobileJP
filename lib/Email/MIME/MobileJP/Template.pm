@@ -39,7 +39,7 @@ __END__
 
 =head1 NAME
 
-Email::MIME::JPMobile::Template - 日本語でメールを送信するときに楽するライブラリ
+Email::MIME::MobileJP::Template - 日本語でメールを送信するときに楽するライブラリ
 
 =head1 SYNOPSIS
 
@@ -57,7 +57,7 @@ Email::MIME::JPMobile::Template - 日本語でメールを送信するときに�
 
 =head1 DESCRIPTION
 
-日本語でメールを送信できます。
+日本語でメールを送信するときにつかうライブラリです。テンプレートファイルを元に、任意のテンプレートエンジンを使用し、メールを作成します。
 
 テンプレートファイルには
 
