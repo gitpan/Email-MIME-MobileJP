@@ -21,16 +21,15 @@ no_index:
     - t
     - xt
 requires:
-  Email::Address: 0
-  Email::Address::JP::Mobile: 0
-  Email::Address::Loose: 0
-  Email::Date::Format: 0
-  Email::MIME: 0
-  Encode: 0
-  Encode::JP::Mobile: 0
-  Tiffany: 0
+  Email::Address: 1.892
+  Email::Address::JP::Mobile: 0.05
+  Email::Address::Loose: 0.01
+  Email::MIME: 1.906
+  Encode: 2.4
+  Encode::JP::Mobile: 0.27
+  Tiffany: 0.03
   parent: 0
   perl: 5.8.1
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.03
+version: 0.04
