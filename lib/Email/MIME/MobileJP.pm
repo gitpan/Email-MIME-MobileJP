@@ -2,7 +2,7 @@ package Email::MIME::MobileJP;
 use strict;
 use warnings;
 use 5.008001;
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 
 1;
@@ -137,7 +137,7 @@ Email::MIME::MobileJP::Creator をつかえば、簡単にメールオブジェ�
 
 =head1 AUTHOR
 
-Tokuhiro Matsuno E<lt>tokuhirom AAJKLFJEF GMAIL COME<gt>
+Tokuhiro Matsuno E<lt>tokuhirom AAJKLFJEF@ GMAIL COME<gt>
 
 =head1 SEE ALSO
 

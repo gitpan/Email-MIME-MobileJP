@@ -1,15 +1,14 @@
 ---
 abstract: 'E-mail toolkit for Japanese Mobile Phones'
 author:
-  - 'Tokuhiro Matsuno <tokuhirom AAJKLFJEF GMAIL COM>'
+  - 'Tokuhiro Matsuno E<lt>tokuhirom AAJKLFJEF@ GMAIL COME<gt>'
 build_requires:
-  ExtUtils::MakeMaker: 6.42
-  Test::More: 0.96
+  Test::More: 0.98
   Test::Requires: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.42
-distribution_type: module
-generated_by: 'Module::Install version 1.00'
+  Module::Build: 0.38
+dynamic_config: 0
+generated_by: 'Module::Build version 0.38, CPAN::Meta::Converter version 2.110440'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -17,9 +16,21 @@ meta-spec:
 name: Email-MIME-MobileJP
 no_index:
   directory:
-    - inc
     - t
-    - xt
+    - inc
+provides:
+  Email::MIME::MobileJP:
+    file: lib/Email/MIME/MobileJP.pm
+    version: 0.06
+  Email::MIME::MobileJP::Creator:
+    file: lib/Email/MIME/MobileJP/Creator.pm
+    version: 0
+  Email::MIME::MobileJP::Parser:
+    file: lib/Email/MIME/MobileJP/Parser.pm
+    version: 0
+  Email::MIME::MobileJP::Template:
+    file: lib/Email/MIME/MobileJP/Template.pm
+    version: 0
 requires:
   Email::Address: 1.892
   Email::Address::JP::Mobile: 0.05
@@ -29,7 +40,7 @@ requires:
   Encode::JP::Mobile: 0.27
   Tiffany: 0.03
   parent: 0
-  perl: 5.8.1
+  perl: 5.008001
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.05
+version: 0.06
