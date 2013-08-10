@@ -1,14 +1,17 @@
 ---
 abstract: 'E-mail toolkit for Japanese Mobile Phones'
 author:
-  - 'Tokuhiro Matsuno E<lt>tokuhirom AAJKLFJEF@ GMAIL COME<gt>'
+  - 'Tokuhiro Matsuno <tokuhirom AAJKLFJEF@ GMAIL COM>'
 build_requires:
+  MIME::Base64: 0
   Test::More: 0.98
   Test::Requires: 0
 configure_requires:
+  CPAN::Meta: 0
+  CPAN::Meta::Prereqs: 0
   Module::Build: 0.38
 dynamic_config: 0
-generated_by: 'Module::Build version 0.38, CPAN::Meta::Converter version 2.110440'
+generated_by: 'Minilla/v0.5.6, CPAN::Meta::Converter version 2.131560'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -17,30 +20,38 @@ name: Email-MIME-MobileJP
 no_index:
   directory:
     - t
+    - xt
     - inc
+    - share
+    - eg
+    - examples
+    - author
 provides:
   Email::MIME::MobileJP:
     file: lib/Email/MIME/MobileJP.pm
-    version: 0.06
+    version: 0.07
   Email::MIME::MobileJP::Creator:
     file: lib/Email/MIME/MobileJP/Creator.pm
-    version: 0
   Email::MIME::MobileJP::Parser:
     file: lib/Email/MIME/MobileJP/Parser.pm
-    version: 0
   Email::MIME::MobileJP::Template:
     file: lib/Email/MIME/MobileJP/Template.pm
-    version: 0
 requires:
+  Devel::Peek: 0
   Email::Address: 1.892
   Email::Address::JP::Mobile: 0.05
   Email::Address::Loose: 0.01
-  Email::MIME: 1.906
+  Email::MIME: 1.923
   Encode: 2.4
   Encode::JP::Mobile: 0.27
   Tiffany: 0.03
   parent: 0
   perl: 5.008001
 resources:
-  license: http://dev.perl.org/licenses/
-version: 0.06
+  bugtracker: https://github.com/tokuhirom/Email-MIME-MobileJP/issues
+  homepage: https://github.com/tokuhirom/Email-MIME-MobileJP
+  repository: git://github.com/tokuhirom/Email-MIME-MobileJP.git
+version: 0.07
+x_contributors:
+  - 'Uchiko <memememomo@gmail.com>'
+  - 'tokuhirom <tokuhirom@gmail.com>'

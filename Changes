@@ -1,5 +1,12 @@
 Revision history for Perl extension Email::MIME::MobileJP
 
+0.07 2013-08-10T03:08:30Z
+
+    Author: Uchiko <memememomo@gmail.com>
+    Date:   Sat Aug 10 11:02:44 2013 +0900
+
+    depend to email-mime 1.923
+
 0.06
 
     - re-packaging
